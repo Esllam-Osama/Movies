@@ -1,12 +1,12 @@
 {
   "homepage": "http://Esllam-Osama.github.io/Movies",
-  "name": "movie",
+  "name": "Movies",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    
+
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
