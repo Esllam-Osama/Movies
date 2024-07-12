@@ -1,0 +1,262 @@
+*{
+  font-family: cursive;
+}
+@font-face {
+  font-family: font_one;
+  src:  url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+}
+.navbar {
+  background-color: transparent;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 0.5s ease;
+  z-index: 1000; /* للتأكد من أنها أمام المحتوى الآخر */
+}
+.line{
+  height: 2px;
+  border-right: 1px #ccc solid;
+  margin-left: 2rem;
+}
+.navbar.fixed-black {
+  background-color: #000;
+}
+.fa-magnifying-glass{
+  cursor: pointer;
+  color: white;
+  transition: .3s all;
+}.fa-magnifying-glass:hover{
+  color: tomato;
+  transition: color .3s ease-in-out;
+}
+.search-box{
+  width: 200px !important;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.search-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 0;
+  overflow: hidden;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 0.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container.show {
+  width: 250px;
+  transition: width 0.5s ease-in-out;
+
+}
+
+.close-icon {
+  cursor: pointer;
+  color: tomato;
+  margin-left: 10px;
+  transition: color 0.3s ease-in-out;
+  font-size: 18px;
+}
+
+.close-icon:hover {
+  color: red;
+
+}
+.navbar-link{
+  transition: .5s all;
+}
+.navbar-link:hover{
+  color:tomato !important;
+  padding: 0px 10px;
+  border-radius: 15%;
+  transition: .5s all;
+}
+.contain{
+  background-image: url(./asetes/wp3837800-space-4k-wallpapers.jpg);
+  width: 100% !important;
+  height: 120vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.film-name{
+  letter-spacing: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-shadow: white 3px 2px 7px;
+  margin-top: 1rem !important;
+}
+.change-font{
+  font-family:"Montserrat", sans-serif !important ;
+}
+.secound-section{
+  margin-top: -3rem;
+}
+.background{
+  background-color: rgba(0, 0, 0, 0.562);
+  box-sizing: border-box !important;
+}
+.butons-second-nav{
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  color:white;
+  border: none;
+  transition: .3s all;
+}
+.butons-second-nav:hover{
+  box-shadow: 0px 3px 0px 0px tomato;
+  transition: .3s all;
+}
+.show1{
+  background-color:#000609 !important;
+  width: 100% !important;
+  margin-top: -1rem !important;
+}
+.poster{
+  height: 403px;
+}
+.details {
+  height: 100%;
+  width: 93%;
+  background-color: rgba(0, 0, 0, 0.788);
+  position: absolute;
+  top: 0;
+  left: 3.5%;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  flex-direction: column;
+  color: white;
+  cursor: pointer;
+
+}
+.chang-hover-buton:hover{
+color: white !important;
+}
+.hide:hover .details{
+  opacity: 1;
+}
+.MuiPagination-ul {
+  justify-content: center;
+}
+.custom-pagination .MuiPaginationItem-root {
+  color: tomato; /* لون النص */
+  border: 1px solid tomato; /* لون الحدود */
+}
+
+.custom-pagination .Mui-selected {
+  background-color: tomato !important; /* لون الخلفية عند التحديد */
+  color: white !important; /* لون النص عند التحديد */
+}
+
+.custom-pagination .MuiPaginationItem-ellipsis {
+  color: rgb(238, 94, 10); /* لون النقاط في الترقيم */
+}
+.first-section-details{
+  background-color: #000609;
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+.details-poster{
+  height: 400px;
+  width: 80%;
+}
+.details-movie{
+  padding: 4rem 10rem 0;
+}
+.movie-name{
+  font-family:"Montserrat", sans-serif !important ;
+}
+.play-icon-poster{
+  bottom: 20px;
+  left: 70px;
+}
+.box-poster-details{
+  box-sizing: border-box;
+  height: 405px;
+  margin-top: 1.5rem;
+}
+.second-section-details{
+  background-color: #000609;
+  border-top: #ffffff solid 2px;
+  justify-content: center;
+  display: flex;
+}
+.contactus-section{
+  background-color: #000609;
+  padding: 1rem 0 0;
+}
+.alert-danger-1{
+  background-color: rgba(24, 192, 66, 0.26) !important;
+  outline: 2px solid rgb(109, 228, 93);
+  margin-top: 3rem;
+}
+.ajs-success{
+  border-radius: 1rem !important;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.ajs-error{
+  border-radius: 1rem !important;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.footer-section{
+  background-color: #000;
+}
+.underline-head-footer{
+  box-shadow: 0px 3px 0px 0px #DC3545;
+  display: inline-block;
+}
+.desc-footer{
+  font-size: .8rem;
+}
+.notmatch{
+  background-color: #000609;
+  padding-top: 10rem;
+  padding-bottom: 18%;
+}
+/* start Your movies */
+.first-section-in-yourmoovies{
+  background-color: #000609;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+.output-search{
+  position: fixed;
+  top: 3.5rem;
+  right: .2rem;
+  width: 23.5%;
+  background-color: #282e30;
+  overflow-y: scroll;
+  text-align: start;
+  padding-left: .3rem;
+  padding-right: .4rem;
+  max-height: 70vh;
+  z-index: 1000;
+}
+.search-output-box{
+  cursor: pointer;
+  background-color: #00000049;
+  overflow: hidden;
+}
+.img-search{
+  width: 23%;
+
+}
+.change-font-size{
+  font-size: .8rem;
+}
