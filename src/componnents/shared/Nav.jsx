@@ -59,7 +59,7 @@ function Navbar() {
       <nav
         className={`navbar navbar-expand-lg ${isScrolled ? "fixed-black" : ""}`}
       >
-        <div className="d-flex container text-light justify-content-between">
+        <div className="d-flex container-lg container-fluid text-light justify-content-between contain-nav">
           <Link
             to="/"
             className="text-light text-decoration-none fw-bolder fs-5 brand"
@@ -67,7 +67,7 @@ function Navbar() {
             <span className="text-danger text-decoration-line-through">M</span>
             ovies<span className="line"></span>
           </Link>
-          <ul className="list-unstyled d-flex gap-5 mt-3">
+          <ul className="list-unstyled d-flex gap-3 ms-3 ms-lg-0 gap-lg-5 mt-3 align-items-center">
             <li>
               <Link
                 to="/"

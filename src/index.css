@@ -260,3 +260,14 @@ color: white !important;
 .change-font-size{
   font-size: .8rem;
 }
+/* make responsive */
+@media screen and (max-width:992px) {
+.contain-nav{
+  flex-wrap: nowrap !important;
+  align-content: center !important;
+  justify-content: space-between !important;
+}
+.line{
+  display: none;
+}
+}
