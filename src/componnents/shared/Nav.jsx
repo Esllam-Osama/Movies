@@ -56,44 +56,48 @@ function Navbar() {
 
   return (
     <>
-      <nav
-        className={`navbar navbar-expand-lg ${isScrolled ? "fixed-black" : ""}`}
-      >
-        <div className="d-flex container text-light justify-content-between">
-          <Link
+
+      <nav className={`navbar navbar-expand-lg ${isScrolled ? "fixed-black" : ""} py-3`}>
+  <div className="container-fluid px-4">
+  <Link
             to="/"
             className="text-light text-decoration-none fw-bolder fs-5 brand"
           >
             <span className="text-danger text-decoration-line-through">M</span>
             ovies<span className="line"></span>
           </Link>
-          <ul className="list-unstyled d-flex gap-5 mt-3">
-            <li>
-              <Link
+    <button className="navbar-toggler border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse mt-3 mt-lg-0" id="navbarSupportedContent">
+      <ul className="navbar-nav mx-auto mb-2 mb-lg-0 gap-4 gap-lg-5">
+        <li className="nav-item ms-0 ms-lg-5">
+        <Link
                 to="/"
-                className="text-decoration-none text-light navbar-link"
+                className="text-decoration-none text-light navbar-link mt-4 mt-lg-0 ms-0 ms-lg-5"
               >
                 Home
               </Link>
-            </li>
-            <li>
-              <Link
+        </li>
+        <li className="nav-item">
+        <Link
                 to="/yourmovies"
                 className="text-decoration-none text-light navbar-link"
               >
                 Your Movies
               </Link>
-            </li>
-            <li>
-              <Link
+        </li>
+
+        <li className="nav-item">
+        <Link
                 to="/contactus"
                 className="text-decoration-none text-light navbar-link"
               >
                 Contact us
               </Link>
-            </li>
-          </ul>
-          <div className="search-box text-center">
+        </li>
+      </ul>
+      <div className="search-box  w-25 my-2 my-lg-0 text-start text-lg-center">
             {!showSearch && (
               <i
                 className="fa-solid fa-magnifying-glass"
@@ -139,8 +143,9 @@ function Navbar() {
               )}
             </div>
           </div>
-        </div>
-      </nav>
+    </div>
+  </div>
+</nav>
     </>
   );
 }
