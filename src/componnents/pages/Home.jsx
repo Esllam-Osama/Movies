@@ -58,7 +58,7 @@ function Home() {
     <>
       <section className="home-section contain mt-0  align-content-center  ">
         <div className="container row w-100 ms-0 text-light">
-          <div className="col-lg-8 col-12 text-center text-lg-start ms-0 ms-lg-5">
+          <div className="col-lg-8 col-12 text-center text-lg-start ms-0 ms-lg-5 mt-5 mt-lg-0">
             <p className=" text-light ">
               <i className="fa-solid fa-star text-danger "></i>
               <span className="ms-3 fs-6">7.5</span>
