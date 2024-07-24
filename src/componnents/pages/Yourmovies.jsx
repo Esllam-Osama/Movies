@@ -30,7 +30,7 @@ function Yourmovies() {
         <div className="row me-0 justify-content-around">
           {Array.isArray(data) && data.length > 0 ? (
             data.map((obj) => (
-              <div key={obj.id} className="hide col-3 mt-4 position-relative">
+              <div key={obj.id} className="hide col-3 px-3 mt-5 position-relative">
                 <img
                   src={`https://image.tmdb.org/t/p/w500/${obj.poster_path}`}
                   className="w-100 poster rounded-4"
@@ -69,7 +69,7 @@ function Yourmovies() {
                 {moreMovies.map((obj) => (
                   <div
                     key={obj.id}
-                    className="hide col-3 mt-5 position-relative"
+                    className="hide col-3 px-3 mt-5 position-relative"
                   >
                     <img
                       src={`https://image.tmdb.org/t/p/w500/${obj.poster_path}`}
